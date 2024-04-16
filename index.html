@@ -1,64 +1,29 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="zh-cn">
 <head>
-    <meta charset="utf-8">
-    <title>Input of Swallow-燕子的输入</title>
-    <style>
-        h2 {
-            color: white;
-            margin-top: 8%;
-        }
-
-        a {
-            color: aqua;
-            /* 使用继承的父元素颜色，或者直接指定颜色，如 black 或 #fff */
-            text-decoration: none;
-            /* 去除下划线 */
-        }
-
-        body {
-            margin: 0;
-            padding: 0;
-            height: 100vh;
-            width: 100%;
-            background: linear-gradient(to bottom right, rgb(0, 0, 0) 0%, rgb(255, 255, 255) 50%, rgb(0, 0, 0) 100%);
-        }
-
-        .main-div {
-            margin-top: 0%;
-            margin-bottom: 0%;
-            margin-left: 5%;
-            margin-right: 5%;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="Script.js" defer></script>
 </head>
-
 <body>
-    <div class="main-div">
-        <h1 style="color:white">Input of Swallow</h1>
-        <a href="https://wwkd.lanzn.com/iy92x1kv1jpi">Input of Swallow 3.0</a>
 
-        <h2>Input of Swallow Mod</h2>
-        <p>
-            <a class="a" href="https://wwkd.lanzn.com/iPeYh1kv2ute">
-                【键增强】StrongerKey
-            </a>
-        </p>
+<div class="main-div" id="main-div">
+    <div class="top-bar" onclick="top_bar_onclick()">+</div>
+</div>
 
-        <p>
-            <a class="a" href="https://wwkd.lanzn.com/ijmGY1kv2usd">
-                【键模拟-键增强前置】WindowsInput
-            </a>
-        </p>
-
-        <p>
-            <a class="a" href="https://wwkd.lanzn.com/ig5zd1kv2uuf">
-                极简壁纸Web
-            </a>
-        </p>
+<div class="dialog-div" id="dialog-div">
+    <div class="dialog-panel">
+        <input id="add-item-input" type="text"
+               style="margin: 30px; background: transparent; border: 1px solid gray; text-align: center; font-size: 64px">
+        <br>
+        <div style="display: flex; align-items: center; justify-content: center; width: 100%; margin-bottom: 5%">
+            <div class="add-item-div" onclick="add_item()">
+                确定
+            </div>
+        </div>
     </div>
+</div>
 
 </body>
-
 </html>
