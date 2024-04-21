@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+    <meta charset="UTF-8">
+    <title>介绍</title>
+    <link rel="stylesheet"  href="../styles/global.css">
+    <style>
+        main{
+            height: 100vh;
+            overflow-y: auto;
+            scroll-snap-type: y mandatory;
+            -webkit-overflow-scrolling: unset;
+        }
+        img{
+            width: 80%;
+        }
+        .slice{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            scroll-snap-align: start;
+            scroll-snap-stop: always;
+        }
+    </style>
+    <script>
+        function toDownload() {
+            content.src = '../pages/download.html';
+        }
+    </script>
+</head>
+<body>
+ <main id="main">
+     <div class="slice">
+         <h1>Input Nav (输入导航)</h1>
+         <h3>帮助您更好的开始</h3>
+     </div>
+
+     <div class="slice">
+         <p>只需在输入框中输入，即可打开位于开始菜单中的任何应用、文件</p>
+         <p> 例如打开一个qq</p>
+         <img src="../res/open-qq.gif" alt="打开QQ" title="打开QQ">
+     </div>
+
+     <div class="slice">
+         <p>对于名字难以输入的文件，我们可以创建一个快捷方式来记住它</p>
+         <img src="../res/add-bz.png" alt="为哔哩哔哩创建快捷方式" title="为哔哩哔哩创建快捷方式" style="width: 50%">
+         <p>然后我们就可以通过输入“bz”来打开哔哩哔哩</p>
+         <img src="../res/open-bz.gif" alt="输入“bz”打开哔哩哔哩" title="输入“bz”打开哔哩哔哩" style="width: 50%">
+     </div>
+
+     <div class="slice">
+         <p>对于方便，我们是认真的</p>
+         <p>如下所示，可以在开始菜单中直接选择应用、文件并为其创建快捷方式</p>
+         <img src="../res/add-in-start-menu.png" alt="从开始菜单中选择" title="从开始菜单中选择">
+     </div>
+
+     <div class="slice">
+         <p>细心的您可能发现了，输入框可以在任何位置被键盘快捷键唤醒</p>
+         <p>所有的文件（没错是所有文件！）都可以像这样创建一个快捷方式，使我们只需要通过键盘就可以快速到达，避免了杂乱不堪的桌面和双手脱离键盘的麻烦</p>
+         <p>你以为只有这些了吗？</p>
+     </div>
+
+     <div class="slice">
+         <p>如果你尝试在输入框中输入没有被保存为快捷方式的内容，那么它将会像下面这样打开默认浏览器进行搜索</p>
+         <img src="../res/search-github.gif" alt="搜索“GitHub”" title="搜索“GitHub”">
+         <h2>至此，让搜索也变的简单</h2>
+     </div>
+
+     <div class="slice">
+         <p>但如果你想浏览一个网页，例如逛逛GitHub，搜索似乎还是来的慢了点</p>
+         <p>那么依然只需要将它简单的添加一下</p>
+         <img src="../res/add-github.png" alt="添加“GitHub”" title="添加“GitHub”">
+         <p>接下来输入github就能直接到达</p>
+         <p>至此，我们再也不需要输入冗长的网址，浏览器收藏夹的功能也被这个小小的输入框所替代</p>
+     </div>
+
+     <div class="slice">
+         <p>它还可以实现几乎任何你需要便捷抵达的功能，不过你可能需要略懂一点cmd指令</p>
+         <p>例如在与朋友联机游戏时，快速的查看自己的ip地址，那么我们需要打开cmd出入“ipconfig”指令</p>
+         <p>而现在我们只需要像下面这样添加好</p>
+         <img src="../res/add-github.png" alt="添加“ip”" title="添加“ip”">
+         <p>然后每次查看时都只需要输入“ip”即可</p>
+     </div>
+
+     <div class="slice">
+         <h4>对于这个单调的界面，我们也提供了自定义样式的功能供您配置</h4>
+         <h5>背景色</h5>
+         <div style="display: flex;flex-direction: row">
+             <img src="../res/set-color.png" alt="设置颜色" title="设置颜色" style="width: 45%; margin-left: 4%">
+             <img src="../res/set-style.png" alt="设置样式" title="设置样式" style="width: 45%; margin-left: 2%">
+         </div>
+         <p>以上四个颜色选项中:</p>
+         <ul>
+             <li>主题背景色 控制所有界面的背景颜色</li>
+             <li>主题边框色 控制所有界面、控件的边框颜色</li>
+             <li>主题前景色 控制所有界面、控件的字体、图标颜色</li>
+             <li>主题高亮色 控制所有控件的高亮颜色</li>
+         </ul>
+     </div>
+
+     <div class="slice">
+         <p>另外您应该也注意到了，我们还可以设置您喜欢的字体（只要您在您的设备中安装了它）</p>
+         <p>例如我就设置了我喜欢的Jetbrains Mono字体</p>
+     </div>
+
+     <div class="slice">
+         <p>基于简单使用且方便的原则，原生的Input Nav主要具备了以上介绍的功能</p>
+         <p>如果您希望它能更加强大，我们也提供了插件接口
+             您可以自己开发或使用他人创作的插件来为它点亮新的技能点</p>
+     </div>
+
+     <div class="slice">
+         <h3>看到这里</h3>
+         <p>如果您有兴趣体验由Input Nav提供的帮助，可以点击
+             <a href="" style="color:aqua;" title="Windows64位">此处</a>
+             或顶部“下载”进行下载</p>
+         <li style="color:red;">！！！注： Input Nav目前只支持Windows</li>
+     </div>
+
+     <div class="slice">
+         <h3>对于开发者</h3>
+         <p>如上所述，Input Nav提供了插件接口，您只需简单的了解Api就可以通过C#为其实现更多您希望看到的功能（是的，甚至不需要用到WPF）</p>
+         <p>关于Input Nav插件开发步骤及Api文档，请查看
+             <a href="" style="color:aqua;">开发文档</a></p>
+     </div>
+ </main>
+</body>
+</html>

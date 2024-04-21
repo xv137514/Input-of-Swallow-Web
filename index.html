@@ -1,29 +1,26 @@
 <!DOCTYPE html>
-<html lang="zh-cn">
+<html lang="zh_CN">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="Script.js" defer></script>
+    <title>Input Nav</title>
+    <link rel="stylesheet" href="https://objects.githubusercontent.com/github-production-release-asset-2e65be/789463038/187cf6b5-cff0-4c83-a01f-42b1b68831f5?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20240421%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240421T113113Z&X-Amz-Expires=300&X-Amz-Signature=605c20f9eb4cbf227b25b1c0e22314675db44eb08f6403d2e65e2117415f866d&X-Amz-SignedHeaders=host&actor_id=137058655&key_id=0&repo_id=789463038&response-content-disposition=attachment%3B%20filename%3DInput.Nav.exe&response-content-type=application%2Foctet-stream">
+    <link rel="stylesheet"  href="styles/global.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="icon" type="image/x-icon" href="res/icon.png">
+    <script src="scripts/index.js" defer></script>
 </head>
 <body>
+ <div class="glass" style="width: 90%;height: 5%;margin-top: 1%;
+      display: flex">
+     <img src="res/icon.png" alt="Input Nav">
+     <div id="introduce" class="top-item" onclick="top_item_onclick(this,'introduce')">介绍</div>
+     <div id="download" class="top-item" onclick="top_item_onclick(this,'download')">下载</div>
+     <div class="top-item" onclick="top_item_onclick(this, 'tutorial')">使用手册</div>
+     <div class="top-item" onclick="top_item_onclick(this, 'wiki')">开发文档</div>
+ </div>
 
-<div class="main-div" id="main-div">
-    <div class="top-bar" onclick="top_bar_onclick()">+</div>
-</div>
-
-<div class="dialog-div" id="dialog-div">
-    <div class="dialog-panel">
-        <input id="add-item-input" type="text"
-               style="margin: 30px; background: transparent; border: 1px solid gray; text-align: center; font-size: 64px">
-        <br>
-        <div style="display: flex; align-items: center; justify-content: center; width: 100%; margin-bottom: 5%">
-            <div class="add-item-div" onclick="add_item()">
-                确定
-            </div>
-        </div>
-    </div>
-</div>
+ <iframe id="content" class="glass" style="height: 91%;
+    margin-top: 1%;width: 90%;border: 0;"></iframe>
 
 </body>
 </html>
