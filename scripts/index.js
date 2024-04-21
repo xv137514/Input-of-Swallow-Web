@@ -6,7 +6,7 @@ function top_item_onclick(item, page){
     content.src = "pages/" + page + ".html";
     if(select_item === null)item.style = "color: aqua";
     else{
-        select_item.style = "color: black";
+        select_item.style = "color: white";
         item.style = "color: aqua";
     }
     select_item = item;
