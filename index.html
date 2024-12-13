@@ -40,10 +40,8 @@
       .image-div {
         height: 150px;
         width: 150px;
-        display: flex;
-        justify-content: stretch;
-        align-content: stretch;
-        background-color: white;
+        display: grid;
+        place-items: stretch;
       }
       .animation {
         animation: changeImage 0.5s infinite;
@@ -76,8 +74,8 @@
     </style>
   </head>
   <body>
-    <div style="width: 80%; height: 500px">
-      <h1 class="title1" id="title1">你输了</h1>
+  <h1 class="title1" id="title1">你输了</h1>
+    <div style="width: 80%; height: 500px; display: grid;place-items: center;">
 
       <div
         style="
@@ -96,7 +94,7 @@
 
         <div class="player">
           <h2>电脑</h2>
-          <div class="image-div">
+          <div class="image-div" style="background-color: white">
             <img src="" id="ai-img" />
           </div>
         </div>
